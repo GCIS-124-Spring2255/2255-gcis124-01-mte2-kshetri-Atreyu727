@@ -12,12 +12,12 @@ public class Triangle implements Shape {
 
     public Triangle(double sideA,double sideB,double sideC) { this.sideA = sideA; this.sideB = sideB; this.sideC = sideC; }
 
-    // @Override
+    @Override
     public double perimeter() {
         return sideA+sideB+sideC;
     }
 
-    // @Override
+    @Override
     public double area() {
         double p = perimeter()  / 2; 
         return Math.sqrt(p*(p-sideA)*(p-sideB)*(p-sideC));
@@ -28,7 +28,6 @@ public class Triangle implements Shape {
         Triangle t1 = new Triangle(3, 4, 5);
         System.out.println(t1.perimeter());
         System.out.println(t1.area());
-        // ...
 
     }
 }

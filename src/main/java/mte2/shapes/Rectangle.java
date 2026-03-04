@@ -26,7 +26,6 @@ public class Rectangle implements Shape {
         Rectangle r1 = new Rectangle(5, 4);
         System.out.println(r1.area());
         System.out.println(r1.perimeter());
-        // ...
 
     }
     
